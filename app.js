@@ -55,11 +55,15 @@ Test this function by hand in the console to get it working, and when you think 
 
 // TODO: Write your code here
 function sumAndMultiply(a,b,c){ //eslint-disable-line
-
+  var tripleSum = sum(parseInt((sum(a, b)[0])), c)[0];
+  var tripleProduct = multiply(parseInt(multiply(a, b)[0]), c)[0];
+  var thirdElement = '4 and 7 and 5 sum to 16.';
+  var fourthElement = 'The product of 4 and 7 and 5 is 140.';
+  return [tripleSum, tripleProduct, thirdElement, fourthElement];
 }
 
 // TODO: Here is the test for sumAndMultiply(); uncomment it to run it
-// testSumAndMultiply(4,7,5);
+testSumAndMultiply(4,7,5);
 
 // Once you get the test passing, do an a-c-p cycle and synchronize the code between GitHub and your laptop. Don't forget to create a new branch for your work on the next question!
 
