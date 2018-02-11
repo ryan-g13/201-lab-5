@@ -84,10 +84,8 @@ function sumArray(testArray){ //eslint-disable-line
   var arraySum = 0;
   for(var i = 0; i < testArray.length; i++) {
     arraySum = sum(arraySum, testArray[i])[0];
-    console.log(arraySum);
   }
   var arrayMessage = testArray[0] + ',' + testArray[1] + ',' + testArray[2] + ' was passed in as an array of numbers, and ' + arraySum +  ' is their sum.';
-  console.log(arrayMessage);
   return [arraySum, arrayMessage];
 }
 
@@ -111,7 +109,6 @@ function multiplyArray(testArray){ //eslint-disable-line
   var arrayProduct = 1; 
   for(var i = 0; i < testArray.length; i++) {
     arrayProduct = multiply(arrayProduct, testArray[i])[0];
-    console.log(arrayProduct);
   }
   var message = 'The numbers ' + testArray[0] + ',' + testArray[1] + ',' + testArray[2] + ' have a product of ' + arrayProduct + '.'; 
   return [arrayProduct, message]; 
